@@ -1,4 +1,4 @@
-package com.hotellook.desertplaceholder;
+package com.hotellook.desertplaceholdersample;
 
 import org.junit.Test;
 

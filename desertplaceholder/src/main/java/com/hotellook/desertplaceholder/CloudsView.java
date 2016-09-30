@@ -5,7 +5,6 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.annotation.VisibleForTesting;
 import android.util.AttributeSet;
 import android.view.View;
 import java.util.ArrayList;
@@ -15,9 +14,9 @@ import static android.graphics.BitmapFactory.decodeResource;
 
 public class CloudsView extends View {
 
+  // useful to disable animation on ui test
+  public static boolean animationEnabled = false;
   private static final float SPEED_DP_PER_SEC = 20f; // dp/sec
-  @VisibleForTesting
-  public static boolean animationEnabled = true;
   private final List<Cloud> clouds = new ArrayList<>();
 
   private Paint paint;

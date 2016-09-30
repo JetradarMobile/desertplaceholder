@@ -1,1 +1,1 @@
-include ':app', ':desertplaceholder'
+include ':app', ':desertplaceholder', ':desertplaceholdersample'

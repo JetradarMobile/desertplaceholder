@@ -1,4 +1,4 @@
-package com.hotellook.desertplaceholder;
+package com.hotellook.desertplaceholdersample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     // Context of the app under test.
     Context appContext = InstrumentationRegistry.getTargetContext();
 
-    assertEquals("com.hotellook.desertplaceholder.test", appContext.getPackageName());
+    assertEquals("com.hotellook.desertplaceholdersample", appContext.getPackageName());
   }
 }

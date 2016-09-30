@@ -1,0 +1,21 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+    applicationId "com.hotellook.desertplaceholdersample"
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.compileSdkVersion
+    versionCode 1
+    versionName "$VERSION_NAME"
+
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+}
+
+dependencies {
+  compile project(':desertplaceholder')
+  compile rootProject.ext.supportAppCompat
+}

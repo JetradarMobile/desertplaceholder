@@ -7,12 +7,13 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.support.annotation.VisibleForTesting;
 import android.util.AttributeSet;
 import android.view.View;
 import java.util.Random;
 
 public class TumbleweedView extends View {
+
+  public static boolean animationEnabled = false;
 
   private static final int INVALID_TIME = -1;
   private static final float START_POSITION_PERCENT_OF_SCREEN = 0.3f;
@@ -24,8 +25,6 @@ public class TumbleweedView extends View {
   private static final float SPEED_RANDOM_DELTA = 0.05f * DEFAULT_SPEED;
   private static final float ROTATION_SPEED = 360;
   private static final float g = 4f;
-  @VisibleForTesting
-  public static boolean animationEnabled = true;
 
   private float density;
   private double timeStamp = INVALID_TIME;
