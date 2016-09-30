@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="clouds_top_margin">20dp</dimen>
+  <dimen name="tumbleweed_bottom_margin">55dp</dimen>
+  <dimen name="cactus_high_bottom_margin">50dp</dimen>
+</resources>

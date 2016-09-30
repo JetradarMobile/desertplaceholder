@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:background="@color/background_sky">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|center_horizontal"
+          android:src="@drawable/mountains"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.45"
+        android:background="@color/background_desert"
+        >
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/horizon_tiled"/>
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/placeholder_message"
+            style="@style/PlaceHolder.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/placeholder_button"
+            style="@style/PlaceHolder.Text.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="16dp"/>
+
+      </LinearLayout>
+
+    </FrameLayout>
+  </LinearLayout>
+
+  <com.hotellook.desertplaceholder.CloudsView
+      android:layout_width="match_parent"
+      android:layout_height="82dp"
+      android:layout_marginTop="@dimen/clouds_top_margin"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginBottom="@dimen/sign_bet_bottom_margin"
+      android:layout_marginLeft="32dp"
+      android:src="@drawable/sign_bed"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical|right"
+      android:layout_marginBottom="@dimen/cactus_high_bottom_margin"
+      android:layout_marginRight="52dp"
+      android:src="@drawable/cactus_high"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:layout_marginBottom="48dp"
+      android:layout_marginLeft="17dp"
+      android:src="@drawable/cactus"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical|right"
+      android:layout_marginRight="14dp"
+      android:layout_marginTop="73dp"
+      android:src="@drawable/stone"/>
+
+  <com.hotellook.desertplaceholder.TumbleweedView
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginBottom="@dimen/tumbleweed_bottom_margin"/>
+
+
+</FrameLayout>

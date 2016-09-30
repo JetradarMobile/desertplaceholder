@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="background_desert">#F2AC4B</color>
+  <color name="background_sky">#D8F3FF</color>
+  <color name="dark_pressed">#1f000000</color>
+  <color name="dark_selected">#F0F0F0</color>
+  <color name="default_rect">#D08B3D</color>
+  <color name="placeholder_pressed">#4D000000</color>
+</resources>
