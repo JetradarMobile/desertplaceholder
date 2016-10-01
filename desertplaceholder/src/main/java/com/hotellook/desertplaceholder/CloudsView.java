@@ -15,7 +15,7 @@ import static com.hotellook.desertplaceholder.DesertPlaceholder.animationEnabled
 
 public class CloudsView extends View {
 
-  private static final float SPEED_DP_PER_SEC = 20f; // dp/sec
+  private static final float SPEED_DP_PER_SEC = 20f;
   private final List<Cloud> clouds = new ArrayList<>();
 
   private Paint paint;
@@ -39,11 +39,7 @@ public class CloudsView extends View {
 
   private void init(Context context) {
     paint = new Paint();
-    Resources res = context.getResources();
     density = context.getResources().getDisplayMetrics().density;
-    clouds.add(new Cloud(decodeResource(res, R.drawable.cloud3), 0.3f, 0));
-    clouds.add(new Cloud(decodeResource(res, R.drawable.cloud2), 0.6f, (int) (22 * density)));
-    clouds.add(new Cloud(decodeResource(res, R.drawable.cloud1), 0.8f, (int) (40 * density)));
   }
 
   @Override
@@ -52,7 +48,7 @@ public class CloudsView extends View {
     if (timeStamp != -1) {
       drawClouds(canvas, time);
     } else {
-      placeToStartPositions();
+      initClouds();
     }
 
     timeStamp = time;
@@ -61,8 +57,18 @@ public class CloudsView extends View {
     }
   }
 
-  private void placeToStartPositions() {
+  private void initClouds() {
+    Resources res = getContext().getResources();
     int width = getWidth();
+    int height = getHeight();
+
+    Bitmap cloudTop = decodeResource(res, R.drawable.cloud3);
+    Bitmap cloudMiddle = decodeResource(res, R.drawable.cloud2);
+    Bitmap cloudBottom = decodeResource(res, R.drawable.cloud1);
+    clouds.add(new Cloud(cloudTop, 0.3f, 0));
+    clouds.add(new Cloud(cloudMiddle, 0.6f, height / 2 - cloudMiddle.getHeight() / 2));
+    clouds.add(new Cloud(cloudBottom, 0.8f, height - cloudBottom.getHeight()));
+
     float percent = 0.1f;
     for (Cloud cloud : clouds) {
       cloud.x = width * percent;
