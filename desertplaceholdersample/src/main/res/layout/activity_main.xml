@@ -9,10 +9,8 @@
     tools:context="com.hotellook.desertplaceholdersample.MainActivity">
 
   <com.hotellook.desertplaceholder.DesertPlaceholder
-
-      app:message="Use this nice placeholder if you haven't got something to show "
+      app:message="Use this nice placeholder if you haven't got something to show"
       app:buttonText="retry"
-
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
 

@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 public class DesertPlaceholder extends FrameLayout {
 
+  public static boolean animationEnabled = true;
+
   private TextView button;
 
   public DesertPlaceholder(Context context) {

@@ -7,13 +7,14 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
+import android.hardware.SensorManager;
 import android.util.AttributeSet;
 import android.view.View;
 import java.util.Random;
 
-public class TumbleweedView extends View {
+import static com.hotellook.desertplaceholder.DesertPlaceholder.animationEnabled;
 
-  public static boolean animationEnabled = false;
+public class TumbleweedView extends View {
 
   private static final int INVALID_TIME = -1;
   private static final float START_POSITION_PERCENT_OF_SCREEN = 0.3f;
@@ -24,7 +25,7 @@ public class TumbleweedView extends View {
   private static final float MIN_SPEED = DEFAULT_SPEED * 0.8f;
   private static final float SPEED_RANDOM_DELTA = 0.05f * DEFAULT_SPEED;
   private static final float ROTATION_SPEED = 360;
-  private static final float g = 4f;
+  private static final float g = SensorManager.GRAVITY_MARS;
 
   private float density;
   private double timeStamp = INVALID_TIME;

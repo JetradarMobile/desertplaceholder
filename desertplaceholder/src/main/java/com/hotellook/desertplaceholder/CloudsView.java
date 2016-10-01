@@ -11,11 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.graphics.BitmapFactory.decodeResource;
+import static com.hotellook.desertplaceholder.DesertPlaceholder.animationEnabled;
 
 public class CloudsView extends View {
 
-  // useful to disable animation on ui test
-  public static boolean animationEnabled = false;
   private static final float SPEED_DP_PER_SEC = 20f; // dp/sec
   private final List<Cloud> clouds = new ArrayList<>();
 
@@ -79,7 +78,7 @@ public class CloudsView extends View {
   }
 
   private void updatePosition(Cloud cloud, double timeDelta) {
-    cloud.x += density * SPEED_DP_PER_SEC * cloud.speedMult * timeDelta;
+    cloud.x += density * SPEED_DP_PER_SEC * cloud.speedMultiplier * timeDelta;
     int width = getWidth();
     if (cloud.x > width) {
       cloud.x = -cloud.bitmap.getWidth();
@@ -88,13 +87,13 @@ public class CloudsView extends View {
 
   private static class Cloud {
     public final Bitmap bitmap;
-    public final float speedMult;
+    public final float speedMultiplier;
     public final int y;
     public float x;
 
-    private Cloud(Bitmap bitmap, float speedMultiplyer, int y) {
+    private Cloud(Bitmap bitmap, float speedMultiplier, int y) {
       this.bitmap = bitmap;
-      this.speedMult = speedMultiplyer;
+      this.speedMultiplier = speedMultiplier;
       this.y = y;
     }
   }
