@@ -64,7 +64,7 @@ dependencies {
 Credentials
 -----------
 
-Designed by [Max Klimchuk](dribbble.com/maxklimchuk)
+Designed by [Max Klimchuk](https://dribbble.com/maxklimchuk)
 
 License
 -------
