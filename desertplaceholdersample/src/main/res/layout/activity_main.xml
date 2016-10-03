@@ -9,6 +9,7 @@
     tools:context="com.hotellook.desertplaceholdersample.MainActivity">
 
   <com.hotellook.desertplaceholder.DesertPlaceholder
+      android:id="@+id/placeholder"
       app:message="Use this nice placeholder if you have nothing to show"
       app:buttonText="retry"
       android:layout_width="match_parent"
