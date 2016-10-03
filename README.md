@@ -38,6 +38,26 @@ In code:
     });
 ```
 
+Testing:
+
+``` java
+  @Rule
+  public final ActivityTestRule<MainActivity> activityRule  = new ActivityTestRule<MainActivity>(MainActivity.class) {
+    @Override
+    protected void beforeActivityLaunched() {
+      //...
+      DesertPlaceholder.animationEnabled = false;
+    }
+  };
+
+  @Test
+  public void placeholder() {
+    onView(withId(R.id.placeholder))
+        .perform(click()) // will freeze here if animation enabled
+        .check(matches(isDisplayed()));
+  }
+```
+
 Download
 --------
 
