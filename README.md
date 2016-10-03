@@ -10,6 +10,34 @@ Compatibility
 
 This library is compatible from API 9 (Android 2.3)
 
+Usage
+-----
+
+* Xml file:
+
+Simply add view to your layout:
+
+``` xml
+  <com.hotellook.desertplaceholder.DesertPlaceholder
+      android:id="@+id/placeholder"
+      app:message="Use this nice placeholder if you have nothing to show"
+      app:buttonText="retry"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+```
+
+In code:
+
+``` java
+   DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
+    desertPlaceholder.setOnButtonClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        // do stuff
+      }
+    });
+```
+
 Download
 --------
 
@@ -32,6 +60,11 @@ dependencies {
     compile 'com.github.JetradarMobile:DesertPlaceholder:1.0.0'
 }
 ```
+
+Credentials
+-----------
+
+Designed by [Max Klimchuk](dribbble.com/maxklimchuk)
 
 License
 -------
