@@ -18,12 +18,14 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_below="@id/mountains"
+      android:layout_marginTop="-1dp"
       android:background="@color/background_desert"/>
 
   <ImageView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_below="@id/mountains"
+      android:layout_marginTop="-1dp"
       android:background="@drawable/horizon_tiled"/>
 
 
@@ -64,6 +66,7 @@
       android:layout_centerHorizontal="true"
       android:layout_marginLeft="50dp"
       android:layout_marginRight="50dp"
+      android:layout_marginTop="16dp"
       android:layout_below="@id/tumbleweed"
       android:gravity="center_horizontal"/>
 
