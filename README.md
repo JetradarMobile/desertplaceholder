@@ -3,6 +3,8 @@ DesertPlaceholder
 
 Animated placeholder in desert style
 
+![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/animation.gif)
+
 Compatibility
 -------------
 
