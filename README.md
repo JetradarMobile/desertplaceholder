@@ -77,7 +77,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'com.github.JetradarMobile:DesertPlaceholder:1.0.0'
+    compile 'com.github.JetradarMobile:DesertPlaceholder:1.0.1'
 }
 ```
 
