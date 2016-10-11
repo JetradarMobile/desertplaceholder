@@ -3,7 +3,7 @@ DesertPlaceholder
 
 Animated placeholder in desert style
 
-![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/animation.gif)
+![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/desertplaceholder.gif)
 
 Compatibility
 -------------
@@ -18,7 +18,7 @@ Usage
 Simply add view to your layout:
 
 ``` xml
-  <com.hotellook.desertplaceholder.DesertPlaceholder
+  <com.jetradar.desertplaceholder.DesertPlaceholder
       android:id="@+id/placeholder"
       app:message="Use this nice placeholder if you have nothing to show"
       app:buttonText="retry"
@@ -86,10 +86,11 @@ Credentials
 
 Designed by [Max Klimchuk](https://dribbble.com/maxklimchuk)
 
+
 License
 -------
 
-    Copyright 2016 Jetradar
+    Copyright 2016 JetRadar
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

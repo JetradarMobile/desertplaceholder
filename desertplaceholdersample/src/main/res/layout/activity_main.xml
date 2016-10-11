@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hotellook.desertplaceholdersample.MainActivity">
+    tools:context="com.jetradar.desertplaceholdersample.MainActivity">
 
-  <com.hotellook.desertplaceholder.DesertPlaceholder
+  <com.jetradar.desertplaceholder.DesertPlaceholder
       android:id="@+id/placeholder"
-      app:message="Use this nice placeholder if you have nothing to show"
-      app:buttonText="retry"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"/>
-
+      android:layout_height="match_parent"
+      app:buttonText="retry"
+      app:message="Use this nice placeholder if you have nothing to show"/>
 
 </RelativeLayout>
