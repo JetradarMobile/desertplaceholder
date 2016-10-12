@@ -8,7 +8,7 @@ Animated placeholder in desert style
 Compatibility
 -------------
 
-This library is compatible from API 9 (Android 2.3)
+This library is compatible from API 14 (Android 4.0)
 
 Usage
 -----
