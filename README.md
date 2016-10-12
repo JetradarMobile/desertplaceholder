@@ -13,9 +13,7 @@ This library is compatible from API 14 (Android 4.0)
 Usage
 -----
 
-* Xml file:
-
-Simply add view to your layout:
+Add view to your layout
 
 ``` xml
   <com.jetradar.desertplaceholder.DesertPlaceholder
@@ -26,7 +24,7 @@ Simply add view to your layout:
       android:layout_height="match_parent"/>
 ```
 
-In code:
+Set up listener to button click
 
 ``` java
    DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
@@ -38,7 +36,7 @@ In code:
     });
 ```
 
-Testing:
+#### Testing
 
 ``` java
   @Rule
