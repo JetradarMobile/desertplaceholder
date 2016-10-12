@@ -5,10 +5,12 @@ Animated placeholder in desert style
 
 ![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/desertplaceholder.gif)
 
+
 Compatibility
 -------------
 
 This library is compatible from API 14 (Android 4.0)
+
 
 Usage
 -----
@@ -36,7 +38,9 @@ Set up listener to button click
     });
 ```
 
-#### Testing
+
+Testing
+-------
 
 ``` java
   @Rule
@@ -56,6 +60,7 @@ Set up listener to button click
   }
 ```
 
+
 Download
 --------
 
@@ -70,7 +75,6 @@ allprojects {
 }
 ```
 
-
 Add the dependency
 
 ```groovy
@@ -78,6 +82,7 @@ dependencies {
     compile 'com.github.JetradarMobile:DesertPlaceholder:1.0.1'
 }
 ```
+
 
 Credentials
 -----------
