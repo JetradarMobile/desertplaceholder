@@ -3,22 +3,22 @@ DesertPlaceholder
 
 Animated placeholder in desert style
 
-![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/animation.gif)
+![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/desertplaceholder.gif)
+
 
 Compatibility
 -------------
 
-This library is compatible from API 9 (Android 2.3)
+This library is compatible from API 14 (Android 4.0)
+
 
 Usage
 -----
 
-* Xml file:
-
-Simply add view to your layout:
+Add view to your layout
 
 ``` xml
-  <com.hotellook.desertplaceholder.DesertPlaceholder
+  <com.jetradar.desertplaceholder.DesertPlaceholder
       android:id="@+id/placeholder"
       app:message="Use this nice placeholder if you have nothing to show"
       app:buttonText="retry"
@@ -26,7 +26,7 @@ Simply add view to your layout:
       android:layout_height="match_parent"/>
 ```
 
-In code:
+Set up listener to button click
 
 ``` java
    DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
@@ -38,7 +38,9 @@ In code:
     });
 ```
 
-Testing:
+
+Testing
+-------
 
 ``` java
   @Rule
@@ -58,6 +60,7 @@ Testing:
   }
 ```
 
+
 Download
 --------
 
@@ -72,7 +75,6 @@ allprojects {
 }
 ```
 
-
 Add the dependency
 
 ```groovy
@@ -81,15 +83,17 @@ dependencies {
 }
 ```
 
+
 Credentials
 -----------
 
 Designed by [Max Klimchuk](https://dribbble.com/maxklimchuk)
 
+
 License
 -------
 
-    Copyright 2016 Jetradar
+    Copyright 2016 JetRadar
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

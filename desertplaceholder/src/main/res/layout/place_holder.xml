@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_sky">
@@ -28,12 +28,11 @@
       android:layout_marginTop="-1dp"
       android:background="@drawable/horizon_tiled"/>
 
-
-  <com.hotellook.desertplaceholder.CloudsView
+  <com.jetradar.desertplaceholder.CloudsView
       android:layout_width="match_parent"
       android:layout_height="100dp"
-      android:layout_marginTop="52dp"
-      android:layout_alignParentTop="true"/>
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="52dp"/>
 
   <ImageView
       android:layout_width="wrap_content"
@@ -51,7 +50,7 @@
       android:layout_marginRight="52dp"
       android:src="@drawable/cactus_high"/>
 
-  <com.hotellook.desertplaceholder.TumbleweedView
+  <com.jetradar.desertplaceholder.TumbleweedView
       android:id="@+id/tumbleweed"
       android:layout_width="match_parent"
       android:layout_height="100dp"
@@ -63,19 +62,19 @@
       style="@style/PlaceHolder.Text"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_below="@id/tumbleweed"
       android:layout_centerHorizontal="true"
       android:layout_marginLeft="50dp"
       android:layout_marginRight="50dp"
       android:layout_marginTop="16dp"
-      android:layout_below="@id/tumbleweed"
       android:gravity="center_horizontal"/>
 
   <TextView
       android:id="@+id/placeholder_button"
       style="@style/PlaceHolder.Text.Button"
-      android:layout_below="@id/placeholder_message"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_below="@id/placeholder_message"
       android:layout_centerHorizontal="true"
       android:layout_marginLeft="72dp"
       android:layout_marginRight="72dp"
@@ -94,11 +93,8 @@
       android:layout_height="wrap_content"
       android:layout_alignParentRight="true"
       android:layout_below="@id/tumbleweed"
-      android:layout_marginTop="62dp"
       android:layout_marginRight="20dp"
+      android:layout_marginTop="62dp"
       android:src="@drawable/stone"/>
-
-
-
 
 </RelativeLayout>
