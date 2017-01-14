@@ -74,10 +74,10 @@ public class CloudsView extends View {
   }
 
   private void initClouds() {
-    Resources res = getContext().getResources();
     int width = getWidth();
     int height = getHeight();
 
+    Resources res = getContext().getResources();
     Bitmap cloudTop = decodeResource(res, R.drawable.cloud3);
     Bitmap cloudMiddle = decodeResource(res, R.drawable.cloud2);
     Bitmap cloudBottom = decodeResource(res, R.drawable.cloud1);
@@ -108,12 +108,12 @@ public class CloudsView extends View {
   }
 
   private static class Cloud {
-    public final Bitmap bitmap;
-    public final float speedMultiplier;
-    public final int y;
-    public float x;
+    final Bitmap bitmap;
+    final float speedMultiplier;
+    final int y;
+    float x;
 
-    private Cloud(Bitmap bitmap, float speedMultiplier, int y) {
+    Cloud(Bitmap bitmap, float speedMultiplier, int y) {
       this.bitmap = bitmap;
       this.speedMultiplier = speedMultiplier;
       this.y = y;

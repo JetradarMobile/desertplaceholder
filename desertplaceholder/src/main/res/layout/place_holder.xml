@@ -59,19 +59,18 @@
 
   <TextView
       android:id="@+id/placeholder_message"
-      style="@style/PlaceHolder.Text"
+      style="@style/PlaceHolder.Message"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_below="@id/tumbleweed"
       android:layout_centerHorizontal="true"
-      android:layout_marginLeft="50dp"
-      android:layout_marginRight="50dp"
-      android:layout_marginTop="16dp"
-      android:gravity="center_horizontal"/>
+      android:layout_marginLeft="48dp"
+      android:layout_marginRight="48dp"
+      android:layout_marginTop="16dp"/>
 
   <TextView
       android:id="@+id/placeholder_button"
-      style="@style/PlaceHolder.Text.Button"
+      style="@style/PlaceHolder.Button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_below="@id/placeholder_message"

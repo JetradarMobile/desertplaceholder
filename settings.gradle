@@ -1,2 +1,2 @@
 include ':desertplaceholder'
-include ':desertplaceholdersample'
+include ':desertplaceholder-sample'

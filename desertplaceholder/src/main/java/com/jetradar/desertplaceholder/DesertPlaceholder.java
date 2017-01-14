@@ -46,24 +46,23 @@ public class DesertPlaceholder extends FrameLayout {
   }
 
   private void init(Context context, AttributeSet attrs) {
-    if (isInEditMode()) {
-      return;
-    }
     LayoutInflater.from(context).inflate(R.layout.place_holder, this, true);
     TextView message = (TextView) findViewById(R.id.placeholder_message);
     button = (TextView) findViewById(R.id.placeholder_button);
 
-    final TypedArray attributes = context
-        .obtainStyledAttributes(attrs, R.styleable.DesertPlaceholder, 0, 0);
-    String messageText = attributes.getString(R.styleable.DesertPlaceholder_message);
-    String buttonText = attributes.getString(R.styleable.DesertPlaceholder_buttonText);
-    message.setText(messageText);
-    if (TextUtils.isEmpty(buttonText)) {
-      button.setVisibility(GONE);
-    } else {
-      button.setText(buttonText);
+    TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.DesertPlaceholder);
+    try {
+      String messageText = attributes.getString(R.styleable.DesertPlaceholder_dp_message);
+      String buttonText = attributes.getString(R.styleable.DesertPlaceholder_dp_buttonText);
+      message.setText(messageText);
+      if (TextUtils.isEmpty(buttonText)) {
+        button.setVisibility(GONE);
+      } else {
+        button.setText(buttonText);
+      }
+    } finally {
+      attributes.recycle();
     }
-    attributes.recycle();
     setBackgroundColor(getResources().getColor(R.color.background_desert));
   }
 

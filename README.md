@@ -1,15 +1,42 @@
 DesertPlaceholder
 =================
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DesertPlaceholder-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5065)
+[![JitPack](https://jitpack.io/v/JetradarMobile/DesertPlaceholder.svg)](https://jitpack.io/#JetradarMobile/DesertPlaceholder)
+[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+
 Animated placeholder in desert style
 
-![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/desertplaceholder.gif)
+![image](https://github.com/JetradarMobile/DesertPlaceholder/blob/master/art/desertplaceholder-demo.gif)
 
 
 Compatibility
 -------------
 
-This library is compatible from API 14 (Android 4.0)
+This library is compatible from API 14 (Android 4.0).
+
+
+Download
+--------
+
+Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+Add the dependency
+
+```groovy
+dependencies {
+    compile 'com.github.jetradarmobile:desertplaceholder:1.1.0'
+}
+```
 
 
 Usage
@@ -20,10 +47,10 @@ Add view to your layout
 ``` xml
   <com.jetradar.desertplaceholder.DesertPlaceholder
       android:id="@+id/placeholder"
-      app:message="Use this nice placeholder if you have nothing to show"
-      app:buttonText="retry"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"/>
+      android:layout_height="match_parent"
+      app:dp_buttonText="retry"
+      app:dp_message="Use this nice placeholder if you have nothing to show"/>
 ```
 
 Set up listener to button click
@@ -61,33 +88,10 @@ Testing
 ```
 
 
-Download
---------
-
-Add it in your root build.gradle at the end of repositories:
-
-```groovy
-allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-    }
-}
-```
-
-Add the dependency
-
-```groovy
-dependencies {
-    compile 'com.github.JetradarMobile:DesertPlaceholder:1.0.1'
-}
-```
-
-
 Credentials
 -----------
 
-Designed by [Max Klimchuk](https://dribbble.com/maxklimchuk)
+Designed by [Max Klimchuk](https://dribbble.com/maxklimchuk).
 
 
 License
