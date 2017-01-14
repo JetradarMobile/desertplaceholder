@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+  compile project(':desertplaceholder')
+  compile 'com.android.support:appcompat-v7:25.1.0'
+
+  androidTestCompile 'com.android.support.test:rules:0.5'
+  androidTestCompile 'com.android.support.test:runner:0.5'
+  androidTestCompile 'com.android.support:support-annotations:25.1.0'
+
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2') {
+    exclude group: 'javax.inject'
+  }
+  androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.2.2') {
+    exclude group: 'com.android.support', module: 'recyclerview-v7'
+    exclude group: 'com.android.support', module: 'appcompat-v7'
+    exclude group: 'com.android.support', module: 'support-v4'
+    exclude group: 'com.android.support', module: 'design'
+  }
+}
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+    applicationId "com.jetradar.desertplaceholder.sample"
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.compileSdkVersion
+    versionCode 1
+    versionName "1.0"
+
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+}
