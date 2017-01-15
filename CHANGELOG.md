@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+## Version 1.1.1
+
+_2017-01-15_
+
+ * Added methods to change message and button text dynamically.
+
+
 ## Version 1.1.0
 
 _2017-01-14_

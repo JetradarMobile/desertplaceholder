@@ -4,6 +4,7 @@ DesertPlaceholder
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DesertPlaceholder-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5065)
 [![JitPack](https://jitpack.io/v/JetradarMobile/DesertPlaceholder.svg)](https://jitpack.io/#JetradarMobile/DesertPlaceholder)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+[![AndroidWeekly](https://img.shields.io/badge/Android%20Weekly-%23240-blue.svg?style=flat)](http://androidweekly.net/issues/issue-240)
 [![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23126-blue.svg?style=flat)](https://www.androiddevdigest.com/digest-126/)
 
 Animated placeholder in desert style
@@ -35,7 +36,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'com.github.jetradarmobile:desertplaceholder:1.1.0'
+    compile 'com.github.jetradarmobile:desertplaceholder:1.1.1'
 }
 ```
 
