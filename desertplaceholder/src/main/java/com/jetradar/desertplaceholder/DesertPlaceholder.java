@@ -29,6 +29,7 @@ public class DesertPlaceholder extends FrameLayout {
   public static boolean animationEnabled = true;
 
   private TextView button;
+  private TextView message;
 
   public DesertPlaceholder(Context context) {
     super(context);
@@ -47,7 +48,7 @@ public class DesertPlaceholder extends FrameLayout {
 
   private void init(Context context, AttributeSet attrs) {
     LayoutInflater.from(context).inflate(R.layout.place_holder, this, true);
-    TextView message = (TextView) findViewById(R.id.placeholder_message);
+    message = (TextView) findViewById(R.id.placeholder_message);
     button = (TextView) findViewById(R.id.placeholder_button);
 
     TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.DesertPlaceholder);
@@ -68,5 +69,13 @@ public class DesertPlaceholder extends FrameLayout {
 
   public void setOnButtonClickListener(OnClickListener clickListener) {
     button.setOnClickListener(clickListener);
+  }
+
+  public void setMessage(String msg){
+    message.setText(msg);
+  }
+
+  public void setButtonText(String action) {
+    button.setText(action);
   }
 }

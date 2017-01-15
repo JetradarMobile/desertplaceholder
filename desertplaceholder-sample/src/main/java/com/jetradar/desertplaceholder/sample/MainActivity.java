@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
     DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
+    desertPlaceholder.setMessage("No Internet Connection. Please, open your wifi or mobile data.");
+    desertPlaceholder.setButtonText("Try again");
     desertPlaceholder.setOnButtonClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
