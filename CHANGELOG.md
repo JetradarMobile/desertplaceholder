@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+## Version 1.1.2
+
+_2017-01-17_
+
+ * Lossy compression for graphics resources (646KB vs 409KB).
+
+
 ## Version 1.1.1
 
 _2017-01-15_

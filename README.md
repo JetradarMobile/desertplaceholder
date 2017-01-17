@@ -36,7 +36,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'com.github.jetradarmobile:desertplaceholder:1.1.1'
+    compile 'com.github.jetradarmobile:desertplaceholder:1.1.2'
 }
 ```
 
