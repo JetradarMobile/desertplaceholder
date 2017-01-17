@@ -1,2 +1,3 @@
 include ':desertplaceholder'
+include ':desertplaceholder-webp'
 include ':desertplaceholder-sample'
