@@ -47,7 +47,7 @@ public class DesertPlaceholder extends FrameLayout {
   }
 
   private void init(Context context, AttributeSet attrs) {
-    LayoutInflater.from(context).inflate(R.layout.place_holder, this, true);
+    LayoutInflater.from(context).inflate(R.layout.placeholder, this, true);
     message = (TextView) findViewById(R.id.placeholder_message);
     button = (TextView) findViewById(R.id.placeholder_button);
 

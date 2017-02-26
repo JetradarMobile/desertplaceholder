@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+## Version 1.2.0
+
+_2017-02-26_
+
+ * Applied [ConstraintLayout](https://developer.android.com/reference/android/support/constraint/ConstraintLayout.html) for correct display on a small area.
+
+
 ## Version 1.1.2
 
 _2017-01-17_
