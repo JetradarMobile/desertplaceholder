@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+## Version 1.2.1
+
+_2017-03-04_
+
+ * Set up max lines for message (3 lines in portrait and 2 lines in landscape).
+
+
 ## Version 1.2.0
 
 _2017-02-26_

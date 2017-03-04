@@ -1,0 +1,5 @@
+<resources>
+
+  <integer name="message_max_lines">3</integer>
+
+</resources>
