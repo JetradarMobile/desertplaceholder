@@ -16,6 +16,9 @@ allprojects {
 ext {
   compileSdkVersion = 25
   buildToolsVersion = '25.0.2'
+
+  supportLibVersion = '25.2.0'
+  constraintLayoutVersion = '1.0.2'
 }
 
 task clean(type: Delete) {
