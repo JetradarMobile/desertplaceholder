@@ -1,6 +1,14 @@
 Change Log
 ==========
 
+
+## Version 1.2.2
+
+_2017-05-21_
+
+ * Fixed crash on creating shadow drawable on Galaxy J7 ([issue #7](https://github.com/JetradarMobile/desertplaceholder/issues/7)).  
+
+
 ## Version 1.2.1
 
 _2017-03-04_
