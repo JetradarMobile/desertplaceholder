@@ -113,7 +113,10 @@ public class TumbleweedView extends View {
     if (scale == 1) {
       toDraw = shadow;
     } else {
-      toDraw = Bitmap.createScaledBitmap(shadow, Math.round(shadow.getWidth() * scale), Math.round(shadow.getHeight() * scale), true);
+      int width = Math.round(shadow.getWidth() * scale);
+      int height = Math.round(shadow.getHeight() * scale);
+      if (width == 0 || height == 0) return;
+      toDraw = Bitmap.createScaledBitmap(shadow, width, height, true);
     }
     canvas.drawBitmap(toDraw, x, getHeight() - shadow.getHeight(), paint);
   }
