@@ -55,12 +55,8 @@ public class DesertPlaceholder extends FrameLayout {
     try {
       String messageText = attributes.getString(R.styleable.DesertPlaceholder_dp_message);
       String buttonText = attributes.getString(R.styleable.DesertPlaceholder_dp_buttonText);
-      message.setText(messageText);
-      if (TextUtils.isEmpty(buttonText)) {
-        button.setVisibility(GONE);
-      } else {
-        button.setText(buttonText);
-      }
+      setMessage(messageText);
+      setButtonText(buttonText);
     } finally {
       attributes.recycle();
     }
@@ -71,12 +67,16 @@ public class DesertPlaceholder extends FrameLayout {
     button.setOnClickListener(clickListener);
   }
 
-  public void setMessage(String msg){
+  public void setMessage(String msg) {
     message.setText(msg);
   }
 
   public void setButtonText(String action) {
-    button.setText(action);
-    button.setVisibility(VISIBLE);
+    if (TextUtils.isEmpty(action)) {
+      button.setVisibility(GONE);
+    } else {
+      button.setText(action);
+      button.setVisibility(VISIBLE);
+    }
   }
 }
