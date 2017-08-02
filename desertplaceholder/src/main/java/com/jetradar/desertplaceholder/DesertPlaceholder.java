@@ -77,5 +77,6 @@ public class DesertPlaceholder extends FrameLayout {
 
   public void setButtonText(String action) {
     button.setText(action);
+    button.setVisibility(VISIBLE);
   }
 }
