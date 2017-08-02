@@ -2,6 +2,13 @@ Change Log
 ==========
 
 
+## Version 1.2.4
+
+_2017-08-02_
+
+ * Fixed button text visibility ([pull #10](https://github.com/JetradarMobile/desertplaceholder/pull/10)).  
+
+
 ## Version 1.2.3
 
 _2017-07-10_
