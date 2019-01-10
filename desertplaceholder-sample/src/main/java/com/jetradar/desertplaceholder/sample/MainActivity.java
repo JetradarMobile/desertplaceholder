@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
+
 import com.jetradar.desertplaceholder.DesertPlaceholder;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
+    DesertPlaceholder desertPlaceholder = findViewById(R.id.placeholder);
     desertPlaceholder.setOnButtonClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {

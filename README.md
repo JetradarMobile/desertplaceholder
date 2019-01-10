@@ -16,6 +16,7 @@ Compatibility
 -------------
 
 This library is compatible from API 14 (Android 4.0).
+I strongly recommend you use Web-P version for API +18 devices (its lighter and smoother)
 
 
 Download
@@ -32,7 +33,7 @@ allprojects {
 }
 ```
 
-Add the dependency
+Add the dependency (for API +14):
 
 ```groovy
 dependencies {
@@ -40,6 +41,13 @@ dependencies {
 }
 ```
 
+Or the recommended Web-P version (for API +18)
+
+```groovy
+dependencies {
+    compile 'com.github.jetradarmobile.desertplaceholder:desertplaceholder-webp:1.2.4'
+}
+```
 
 Usage
 -----
