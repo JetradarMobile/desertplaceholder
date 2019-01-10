@@ -48,8 +48,8 @@ public class DesertPlaceholder extends FrameLayout {
 
   private void init(Context context, AttributeSet attrs) {
     LayoutInflater.from(context).inflate(R.layout.placeholder, this, true);
-    message = (TextView) findViewById(R.id.placeholder_message);
-    button = (TextView) findViewById(R.id.placeholder_button);
+    message = findViewById(R.id.placeholder_message);
+    button = findViewById(R.id.placeholder_button);
 
     TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.DesertPlaceholder);
     try {
