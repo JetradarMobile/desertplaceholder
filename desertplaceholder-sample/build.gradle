@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
-  buildToolsVersion rootProject.ext.buildToolsVersion
+  buildToolsVersion '28.0.3'
 
   defaultConfig {
     applicationId "com.jetradar.desertplaceholder.sample"
     minSdkVersion 14
-    targetSdkVersion 25
+    targetSdkVersion 28
     versionCode 1
     versionName "1.0"
 
@@ -16,17 +16,17 @@ android {
 }
 
 dependencies {
-  compile project(':desertplaceholder')
-  compile "com.android.support:appcompat-v7:$supportLibVersion"
+  implementation project(':desertplaceholder')
+  implementation "com.android.support:appcompat-v7:$supportLibVersion"
 
-  androidTestCompile 'com.android.support.test:rules:0.5'
-  androidTestCompile 'com.android.support.test:runner:0.5'
-  androidTestCompile "com.android.support:support-annotations:$supportLibVersion"
+  androidTestImplementation 'com.android.support.test:rules:1.0.2'
+  androidTestImplementation 'com.android.support.test:runner:1.0.2'
+  androidTestImplementation "com.android.support:support-annotations:$supportLibVersion"
 
-  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2') {
+  androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2') {
     exclude group: 'javax.inject'
   }
-  androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.2.2') {
+  androidTestImplementation('com.android.support.test.espresso:espresso-contrib:2.2.2') {
     exclude group: 'com.android.support', module: 'recyclerview-v7'
     exclude group: 'com.android.support', module: 'appcompat-v7'
     exclude group: 'com.android.support', module: 'support-v4'
